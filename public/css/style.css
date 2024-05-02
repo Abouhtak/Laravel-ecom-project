@@ -1,0 +1,234 @@
+
+
+.card{
+
+    border: solid 1px black;
+    border-radius: 12px 12px 12px 0px;
+    width: 80%;
+}
+
+
+img{
+    width:100%;
+    height: 20%;
+    border-radius: 12px;
+
+}
+.h1 , .img , .img1  {
+    display: inline;
+}
+.div-h{
+    margin-bottom:40px;
+    margin-top:30px;
+
+}
+
+
+.wrapper{
+    overflow: hidden;
+}
+.wrapper img{
+    width: 100%; height: 100%;
+    transition: scale 400ms;
+}
+.wrapper:hover img{
+    scale:120%;
+}
+
+.scrollable-div {
+    max-height: 300px; /* Set a maximum height for the scrollable div */
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+
+
+
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+      }
+
+
+
+
+
+
+
+  .product-card {
+
+    width: 300px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    transition: box-shadow 0.3s ease; 
+  }
+
+  .product-card:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
+  }
+
+  .product-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .product-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .product-card p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .buttons {
+    display: none; 
+  }
+
+  .product-card:hover .buttons {
+    display: block; 
+  }
+
+  .top-button {
+    background-color: #ce3719;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  .top-button:hover {
+    background-color: #d49;
+  }
+  .top-button::before {
+    content: "";
+    position: absolute;
+    top: -120%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: rotate(45deg);
+    transition: 0.5s;
+    pointer-events: none;
+  }
+  .top-button:hover::before {
+    top: -20%;
+  }
+
+  .custom-button {
+    background-color: #27151500;
+    color: rgb(70, 70, 70);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
+  }
+  .custom-button:hover {
+    background-color: #0057b300;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  }
+
+  .gradient-button {
+    background: linear-gradient(to right, #000000, #646464);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  .gradient-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  }
+
+  .custom-alert {
+    position: relative;
+    padding: 1rem 1rem 1rem 3.5rem;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #007bff;
+  }
+  .custom-alert:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3.5rem;
+    height: 100%;
+    border-radius: 5px 0 0 5px;
+    background-color: #0b6dd6;
+  }
+  .custom-alert.success {
+    background-color: #00ff22;
+  }
+.custo-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    background-color: #66d51c;
+    color: #FFFFFF;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .custo-button:hover {
+    background-color: #a19397;
+    cursor: pointer;
+  }
+  .all-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #272727;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+  }
+
+
+  .custom-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #272727;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .custom-link::after {
+    content: "";
+    position: absolute;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: left 0.3s ease;
+    z-index: -1;
+  }
+
+  .custom-link:hover::after {
+    left: 0;
+  }
